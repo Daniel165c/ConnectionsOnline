@@ -12,7 +12,8 @@ class ConnectionsOnlineView(View):
 
 class PostJobsViews(View):
     def get(self, request):
-        form = JobListingForm()  
+        form = JobListingForm() 
+        print(request) 
         return render(request=request,
         template_name='postjobs.html',context = {'form': form})
 
@@ -22,6 +23,9 @@ class PostJobsViews(View):
         if form.is_valid():
           description = form.cleaned_data['JobTitle']
           Job.objects.create(job_description=description)
-
+        print(request, description) 
         # "redirect" to the postjob homepage
         return redirect('postjobs')  
+
+
+        
