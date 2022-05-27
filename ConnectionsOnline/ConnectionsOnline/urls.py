@@ -21,5 +21,4 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('JobPostings.urls')),
-    #path('add_Joblistings', views.add_joblistings, name ='add Joblisting'),
-]
+    ]
