@@ -5,6 +5,6 @@ from JobPostings.views import *
 urlpatterns = [
    
     path('', ConnectionsOnlineView.as_view(), name='home'),
-    path('postjobs/', PostJobsViews.as_view(), name='postjobs'),
-    #path('add_Joblistings', views.add_joblistings, name ='Joblistings'),
+    path('postjobs/', PostJobsView.as_view(), name='postjobs'),
+    path('joblist', JobListingsView.as_view(), name ='joblist'),
 ]
