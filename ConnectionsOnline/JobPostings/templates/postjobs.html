@@ -2,11 +2,19 @@
     Job Opportunities
  </h1>
  
+ <h2>List Job Here</h2>
 
  
- <form action = "" method = "get">
-     <label for="post_job">Post Job: </label>
-     <input id="post_job" type="text" name="post_job">
-     <input type="submit" value="OK">
- </form>
- 
+<form action="{% url 'postjobs' %}" method="POST">
+    {% csrf_token %}
+    {{ form }}
+
+    <input type="submit" name="create" value="Create" />
+</form>
+
+
+<ul>
+    {% for job_description in job_descriptions %}
+        <li>{{ job_description }}</li>
+    {% endfor %}
+</ul>
