@@ -1,0 +1,17 @@
+
+<h2> 
+    <a href="joblistings">
+     Job Listing</a>
+ </h2>
+    
+ <form action="{% url 'joblist' %}" method="POST">
+    {% csrf_token %}
+    {{ form }}
+
+    <input type="submit" name="create" value="Create" />
+</form>
+ <form action = "" method ="POST">
+     <label for="Job list">Job: </label>
+     <input id="your_name" type="text" name="your_name">
+     <input type="submit" value="Post">
+ </form>
