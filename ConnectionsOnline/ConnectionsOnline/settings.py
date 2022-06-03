@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5yg8$)iwi1h)14p$f(f&v^jk+e-hm$yajr3g3oerzaow&5@qa&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['local.ripplematch.com', '127.0.0.1']
 
 
 # Application definition
