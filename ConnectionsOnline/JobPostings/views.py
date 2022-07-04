@@ -43,4 +43,3 @@ def update(request):
     job_to_update.job_title = request.POST.get('job_title') if request.POST.get('job_title') != None else skip #only update if form has an updated state submitted for job title/description
     job_to_update.job_description = request.POST.get('job_description') if request.POST.get('job_description') != None else skip
     job_to_update.save()
-    return HttpResponseRedirect(reverse('index'))
