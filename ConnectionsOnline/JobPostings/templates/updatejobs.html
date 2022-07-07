@@ -1,0 +1,17 @@
+<h3>Edit Job Posting</h3>
+<form action = "{% url 'confirm_update' %}" method = "PUT" style="display:inline; width:40%;">
+   {% csrf_token %}
+      <section>
+         <label for="job_title">Job Title: </label>
+         <input type="text" name="job_title" style="width:25vw;" value={{job.job_title}}/>
+         <input type="text" name="id" style="display:none;" value={{job.id}}/>
+      </section>
+      <br/>
+      <section style="height: 300px; width: 30vw; margin-top: 2%;">
+         <label for="job_description" style="height:100%; width:100%;">Job Description:</label>
+         <input type="" name="job_description" style="height:100%; width:100%; border-radius: 5%;" value={{job.job_description}}/>
+      </section>
+
+      <br/>
+      <input type="submit" value="Submit Job" style="width:30vw; margin-top:5px;">
+</form>
