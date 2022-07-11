@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/fca6c0e9a5.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +12,39 @@
   <header>
     <nav class="navbar">
       <div class="brand-title">Connections Online</div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <script src="https://kit.fontawesome.com/fca6c0e9a5.js" crossorigin="anonymous"></script>
-<i class="fa-solid fa-house"></i>
-
-          <li><a href="#">Home</a></li>
-          <li><a href="postjobs">
-            Employment / Post Job</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" class="btn-sign up"> Sign Up</a></li>
-          <div class="hero-box">
-            <h1 class="hero-heading">Our mission here is to Connect with Justice-Impacted and Post-Released individuals we believe that everyone should have the proper resources that supports them to achieve their goals of personal and community development.</h1>
-            <p class="hero-desc"> Everyone should have a second chance! Stay Connected
-      
-            </p>
-            <div class="btn-box">
-              <a href="#" class=" cta-btn try"> Resources</a>
-              <a href="#" class=" cta-btn demo"> Education</a>
-      
-      
-          </div>
-        </ul>
+     
+      <div class="menu">
+          <a href="#">Home</a>
+          <a href="postjobs">
+            Employment / Post Job</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#" class="btn-signup"> Sign Up</a>
+        
+       
       </div>
     </nav>
     <div class="hero"></div>
+  
+  <div class="hero-box">
+    <h1 class="hero-heading">Our mission here is to Connect with Justice-Impacted and Post-Released individuals we believe that everyone should have the proper resources that supports them to achieve their goals of personal and community development.</h1>
+    <p class="hero-desc"> Everyone should have a second chance! Stay Connected
+
+    </p>
+    <div class="btn-box">
+      <a href="#" class=" cta-btn try"> Resources</a>
+      <a href="#" class=" cta-btn demo"> Education</a>
+
+
+  </div>
+  </div>
   </header>
   <script src="/Assets/main.js" defer></script>
 <style>
+.brand-title {
+color:#ffffff
+
+}
  header {
   width: 100%;
 height: 1300px;
@@ -54,15 +54,16 @@ background-repeat: no-repeat;
 background-size: cover;
 padding-top: 32px;
       }
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
-}
+
 
 .navbar{
     display: flex;
     justify-content: space-around;
     margin-bottom: 100px;
+}
+
+.navbar .menu li{
+  display: inline-block;
 }
 .navbar .menu a:not(:last-child){
     color: #ffffff;
