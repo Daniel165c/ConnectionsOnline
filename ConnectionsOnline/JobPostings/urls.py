@@ -10,4 +10,5 @@ urlpatterns = [
     path('postjobs/delete/<int:id>', views.delete, name='delete_job'),
     path('postjobs/update', views.update, name='confirm_update'),
     path('postjobs/edit/<int:id>', views.ConnectionsOnlineUpdateView.as_view(), name="update_job")
+    
 ]
