@@ -1,5 +1,5 @@
 
-<h1 style="color:blue;">
+<h1 style="color:rgb(255, 0, 0);">
     Job Opportunities
 </h1>
 
@@ -7,7 +7,9 @@
 
 
 <div style="display: inline-block; width:40%">
-    <h3>Post a New Job</h3>
+    <h3>Post a New Job
+
+    </h3>
     <form action = "{% url 'add_job' %}" method = "POST" style="display:inline; width:40%;">
         {% csrf_token %}
          <section>
@@ -32,6 +34,7 @@
                 <p>Job Description: {{job.job_description}}</p>
                 <a href="delete/{{job.id}}" style="" ><button>Delete</button></a>
                 <a href="edit/{{job.id}}" style="" ><button>Edit</button></a>
+                <a href="apply/{{job.id}}" style= ><button>Apply</button></a>
                 <hr>
             </li>
         {% endfor %}
